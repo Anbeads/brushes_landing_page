@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/styles.css">
+   <!-- font awesome -->
+   <script src="https://kit.fontawesome.com/70a3c05b29.js"></script>
+  <title>Brushes landing</title>
+ <!--smazat až projde testem-->
+  <style> 
+    ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+@media (max-width: 578px) {
+  .body {
+    padding: 0;
+  }
+}
+  </style>
+
+</head>
+<body>
+  
+  <header id="header">
+    <div class="navigation grid-nav grid">
+      <figure class="logo-container">
+        <!--změnit img až mi to schválí-->
+        <img class="logo" id="header-img" src="https://img26.rajce.idnes.cz/d2601/9/9371/9371291_3867798571f3bc905d15b763d6c7f06c/images/logo_zk.jpg?ver=0" alt="logo"> <!--tady to chce httppro splnení chalenge, tak to tam pak na chvilku dám*-->
+      </figure>
+      <nav class="navbar" id="nav-bar">
+        <ul>
+          <!--When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.-->
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#media">Best video ever</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div class="description ">
+      <h1>Karlos's Brushes</h1>
+      <h2>Best brushes for your art self</h2>
+    </div>
+    
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input class="mail" type="email" id="email" name="email" placeholder="Enter your email" required>
+      <input id="submit" type="submit" value="Suscribe newsleter" class="btn"/> 
+    </form>
+  </header>
+  
+  <div class="divider">
+  </div>
+
+  <main>
+    
+    <section id="features" class="grid-features">
+      <div class=" icon icon-vegan fas fa-seedling"></div>
+      <div class="feature vegan">
+        <h2>Vegan friendly</h2>
+        <p>You can paint without killing. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur harum dignissimos? </p>
+      </div>
+      
+      <i class="icon icon-cert fas fa-certificate"></i>
+      <div class="feature cert">
+        <h2>Certified quality</h2>
+        <p>Certification from mister Karlos and squirels. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur harum dignissimos? </p>
+      </div>
+      <i class=" icon icon-hand fas fa-hand-sparkles"></i>
+      <div class="feature hand">
+        <h2>Hand crafted</h2>
+        <p>No hand was harm during process. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur harum dignissimos? </p>
+      </div>
+    </section>
+
+    <section id="media">
+      <p class="snail">We do not have video of our brushes, so look at these snails</p>
+      <iframe id="video"  src="https://www.youtube.com/embed/O8a4oUK3LAw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing" class="pricing-cards">
+    
+        <div class="card">
+          <div class="card-header">Starter</div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur harum dignissimos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur harum dignissimos? </p>
+          <button class="card-button">Select</button>
+        </div>
+
+        <div class="card">
+          <div class="card-header">Artist</div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur harum dignissimos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur harum dignissimos? </p>
+          <button class="card-button">Select</button>
+        </div>
+
+        <div class="card">
+          <div class="card-header">No Lifer</div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur harum dignissimos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur harum dignissimos?</p>
+          <button class="card-button">Select</button>
+        </div>
+      
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li> <a href="">GDPR</a></li>
+      <li> <a href="">Thermometers</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <small> &copy fake brushes</small>
+  </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
